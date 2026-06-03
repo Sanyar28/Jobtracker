@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd frontend/jobtracker-ui && npm install --legacy-peer-deps && npm run build",
-  "outputDirectory": "frontend/jobtracker-ui/build",
-  "framework": null
+  "buildCommand": "npm install --legacy-peer-deps && npm run build",
+  "outputDirectory": "build",
+  "framework": "create-react-app"
 }
