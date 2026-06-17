@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import axios from 'axios';
+import api from './api';
 
 function Login() {
   const [username, setUsername] = useState('');
@@ -11,7 +11,7 @@ function Login() {
   async function handleSubmit(e) {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:8080/api/auth/login', {
+      const res = await api.post('/api/auth/login', {
         username,
         password
       });
